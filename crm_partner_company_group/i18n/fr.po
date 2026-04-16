@@ -1,0 +1,42 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* crm_partner_company_group
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-16 15:56+0000\n"
+"PO-Revision-Date: 2026-04-16 15:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: crm_partner_company_group
+#: model:ir.model.fields,field_description:crm_partner_company_group.field_crm_lead__company_group_id
+#: model_terms:ir.ui.view,arch_db:crm_partner_company_group.view_crm_case_opportunities_filter
+msgid "Company Group"
+msgstr "Groupe de sociétés"
+
+#. module: crm_partner_company_group
+#: model:ir.model,website_form_label:crm_partner_company_group.model_crm_lead
+msgid "Create an Opportunity"
+msgstr "Créer une opportunité"
+
+#. module: crm_partner_company_group
+#: model:ir.model.fields,field_description:crm_partner_company_group.field_crm_lead__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: crm_partner_company_group
+#: model:ir.model.fields,field_description:crm_partner_company_group.field_crm_lead__id
+msgid "ID"
+msgstr ""
+
+#. module: crm_partner_company_group
+#: model:ir.model,name:crm_partner_company_group.model_crm_lead
+msgid "Lead"
+msgstr "Piste"
