@@ -48,7 +48,6 @@
             name="category_id"
             eval="[(6, 0, [ref('res_partner_category_pmr_11'), ref('res_partner_category_pmr_4')])]"
         />
-        <field name="is_company">1</field>
         <field name="city">Le Bourget du Lac</field>
         <field name="zip">73377</field>
         <field name="phone">+33 4 49 23 44 54</field>
@@ -56,6 +55,9 @@
         <field name="street">93, Press Avenue</field>
         <field name="email">great@yourcompany.example.com</field>
         <field name="website">http://www.great.com</field>
+        <!-- is_company is a computed/stored field since Odoo 17: it needs a
+             valid VAT (has_vat) to be True, setting it directly has no effect. -->
+        <field name="vat">FR27552032534</field>
     </record>
     <record id="res_partner_pmr_best" model="res.partner">
         <field name="name">Best Washing Powder Company</field>
@@ -63,7 +65,6 @@
             name="category_id"
             eval="[(6, 0, [ref('res_partner_category_pmr_4'), ref('res_partner_category_pmr_11')])]"
         />
-        <field name="is_company">1</field>
         <field name="city">Champs sur Marne</field>
         <field name="zip">77420</field>
         <field name="country_id" ref="base.fr" />
@@ -71,11 +72,11 @@
         <field name="phone">+33 1 64 61 04 01</field>
         <field name="street">12 rue Albert Einstein</field>
         <field name="website">http://www.best.com/</field>
+        <field name="vat">FR03552081317</field>
     </record>
     <record id="res_partner_pmr_super" model="res.partner">
         <field name="name">Super Washing Powder Company</field>
         <field name="category_id" eval="[(6,0,[ref('res_partner_category_pmr_5')])]" />
-        <field name="is_company">1</field>
         <field name="street">3rd Floor, Room 3-C,</field>
         <field
             name="street2"
@@ -86,6 +87,7 @@
         <field name="phone">+58 212 681 0538</field>
         <field name="country_id" ref="base.ve" />
         <field name="website">super.com</field>
+        <field name="vat">J-12345678-4</field>
     </record>
     <!-- Relations -->
     <record id="rel_1" model="res.partner.relation">
